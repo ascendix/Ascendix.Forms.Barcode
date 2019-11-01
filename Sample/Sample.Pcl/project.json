@@ -1,0 +1,10 @@
+﻿{
+  "supports": {},
+  "dependencies": {
+    "Plugin.Permissions": "3.0.0.12",
+    "Xamarin.Forms": "4.2.0.709249"
+  },
+  "frameworks": {
+    ".NETPortable,Version=v4.6,Profile=Profile44": {}
+  }
+}

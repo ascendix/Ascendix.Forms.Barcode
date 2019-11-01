@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Ascendix.Forms.Barcode</id>
+    <title>Barcode scanner plugin for Xamarin.Forms</title>
+    <version>1.0.1</version>
+    <authors>Viktor Zaika</authors>
+    <owners>Ascendix Technologies</owners>
+    <license type="file">LICENSE.txt</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright ©2019 Ascendix Technologies</copyright>
+    <description>Ascendix.Forms.Barcode based on Rb.Forms.Barcode. It's Xamarin.Forms view for scanning barcodes.</description>
+    <summary>Ascendix.Forms.Barcode is a Xamarin.Forms view for scanning barcodes.</summary>
+    <releaseNotes>
+1.0.1: 
+* Change: update Xamarin.Forms to 4.2.0.709249 
+* Fixed android camera restart 
+* Tourch behaviour was improved 
+
+1.0.0: 
+* Change: update to googleplayServices 71.1610.0 
+* Change: update Xamarin.Forms to 4.1.0.673156 
+
+0.7.1: 
+* Change: update to googleplayServices 29.0.0.1 
+* Change: update Xamarin.Forms to 2.3.0.107 
+
+0.6.6: 
+* Fix:scanner crashed under android due to autofocus error on older devices. 
+</releaseNotes>
+    <tags>barcode scanner scanning scan xamarin xamarin.forms googleplayservices vision gms</tags>
+    <dependencies>
+        <group>
+            <dependency id="Xamarin.Forms" version="4.2.0.709249" />
+        </group>
+
+        <group targetFramework="MonoAndroid10">
+            <dependency id="Xamarin.GooglePlayServices.Vision" version="71.1702.0" />
+        </group>
+    </dependencies>
+  </metadata>
+  <files>
+     <file src="licenses\license.txt" target="LICENSE.txt" />
+      <!-- PCL -->
+     <!-- PCL -->
+     <file src="Acx.Forms.Barcode.Pcl\bin\Release\Acx.Forms.Barcode.Pcl.dll"
+         target="lib\portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Acx.Forms.Barcode.Pcl.dll" />
+
+     <!-- Xamarin.Android -->
+     <file src="Acx.Forms.Barcode.Droid\bin\Release\Acx.Forms.Barcode.Pcl.dll"
+         target="lib\MonoAndroid10\Acx.Forms.Barcode.Pcl.dll" />
+     <file src="Acx.Forms.Barcode.Droid\bin\Release\Acx.Forms.Barcode.Droid.dll"
+         target="lib\MonoAndroid10\Acx.Forms.Barcode.Droid.dll" />
+     <file src="Acx.Forms.Barcode.Droid\bin\Release\CameraSourceBindings.dll"
+         target="lib\MonoAndroid10\CameraSourceBindings.dll" />
+
+	<!-- Xamamarin.iOS -->
+     <file src="Acx.Forms.Barcode.iOS\bin\Release\Acx.Forms.Barcode.iOS.dll"
+         target="lib\Xamarin.iOS10\Acx.Forms.Barcode.iOS.dll" />
+     <file src="Acx.Forms.Barcode.iOS\bin\Release\Acx.Forms.Barcode.Pcl.dll"
+         target="lib\Xamarin.iOS10\Acx.Forms.Barcode.Pcl.dll" />
+  </files>
+</package>
