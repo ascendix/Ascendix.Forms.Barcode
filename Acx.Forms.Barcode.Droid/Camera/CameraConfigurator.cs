@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Android.Graphics;
@@ -270,6 +270,9 @@ namespace Acx.Forms.Barcode.Droid.Camera
         /// </summary>
         private string determineFlashMode(AndroidCamera.Parameters p, bool state) 
         {
+            if (p.SupportedFlashModes == null)
+                return string.Empty;
+
             if (state && p.SupportedFlashModes.Contains(AndroidCamera.Parameters.FlashModeTorch)) {
                 return AndroidCamera.Parameters.FlashModeTorch;
             }
