@@ -2,7 +2,7 @@
 
 ## What is this?
 
-Acx.Forms.Barcode is a **Xamarin.Forms view for scanning barcodes** that are based on [based on RB.Forms.Barcode](https://github.com/rebuy-de/rb-forms-barcode)
+Acx.Forms.Barcode is a **Xamarin.Forms view for scanning barcodes** that are based on [based on RB.Forms.Barcode](https://github.com/rebuy-de/rb-forms-barcode). 
 It provides continuous scanning and aims to give high control to the user along with high stability.
 
 [Available via Nuget](https://www.nuget.org/packages/Acx.Forms.Barcode), full of awesomeness and  unicorns.
